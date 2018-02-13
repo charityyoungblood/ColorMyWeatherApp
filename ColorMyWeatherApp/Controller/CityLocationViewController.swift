@@ -8,6 +8,12 @@
 
 import UIKit
 
+// TODO: Install the following Cocoapods:
+    // CZWeatherKit
+    // SwiftyJSON
+    // Alamofire
+    // UICircularProgressRing
+
 class CityLocationViewController: UIViewController {
 
     override func viewDidLoad() {
