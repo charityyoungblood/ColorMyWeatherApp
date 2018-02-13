@@ -16,9 +16,12 @@ import UIKit
 
 class CityLocationViewController: UIViewController {
 
+    @IBOutlet weak var cityLocationBackgroundColor: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
