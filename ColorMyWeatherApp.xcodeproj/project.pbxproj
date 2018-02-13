@@ -58,9 +58,9 @@
 		4703B50620339D1D001D1DB7 /* ColorMyWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				4703B5192033A2A8001D1DB7 /* Model */,
 				4703B51B2033A2B0001D1DB7 /* View */,
 				4703B51A2033A2AD001D1DB7 /* Controller */,
-				4703B5192033A2A8001D1DB7 /* Model */,
 				4703B50720339D1D001D1DB7 /* AppDelegate.swift */,
 				4703B51020339D1E001D1DB7 /* LaunchScreen.storyboard */,
 				4703B51320339D1E001D1DB7 /* Info.plist */,
