@@ -15,15 +15,41 @@ import UIKit
     // UICircularProgressRing
 
 class CityLocationViewController: UIViewController {
+    
+    // TODO:
+    
 
     var pantoneColors: UIColor = UIColor(init(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0))
     
     
     @IBOutlet weak var cityLocationBackgroundColor: UIImageView!
     
+    // TODO: Create button with text "Show Me My Color Palette!" > connect to CityLocationViewController with @IBAction
+    
+    // TODO: Check if user has enabled location settings
+    
+    // TODO: Create function to ask permission from user to access location (use ShoeLove App as guide)
+    
+    // TODO: Update Privacy properties in Info.plist file
+        // > Add "Privacy - Usage Description"
+        // > Add "Privacy - When in Use.."
+    
+    //TODO: Create a function for "If user denies location permission"
+        // > Change UI to include a text field
+        // > The text field should read (or add label) "Please enter your location or Please enter your city, state"
+    
+    // TODO: Add image assets for weather conditions
+    
+    // TODO: Set up data Model - LocationWeatherData class
+        // Think about what properties need to be set in this class that we can access for weather data
+        // Can you store color data for Pantone suggestions here?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // TODO: Change background color to animate/change to a different Pantone color every few seconds
+        // TODO: Create function to change background color to animate/change to a different Pantone color every few seconds
+        // **ASK MENTOR TO EXPLAIN UICOLOR CUSTOM COLOR CREATION - from your understanding the steps are:
+        // create a UIColor object > set to variable > call on that property/variable to set the background color (attempted this in changeBackgroundColor)
         changeBackgroundColor()
         
     }
