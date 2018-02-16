@@ -16,6 +16,9 @@ class WeatherColorViewController: UIViewController {
     
     @IBOutlet weak var weatherImage: UIImageView!
     
+    @IBOutlet weak var suggestionLabel: UILabel!
+    
+    @IBOutlet weak var colorPalette: UIImageView!
     
     // TODO: Display temperature °F/°C
 
