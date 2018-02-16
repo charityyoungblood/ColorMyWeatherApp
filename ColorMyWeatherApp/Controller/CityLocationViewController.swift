@@ -19,10 +19,10 @@ class CityLocationViewController: UIViewController {
     // TODO:
     
 
-    var pantoneColors: UIColor = UIColor(init(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0))
+    // var pantoneColors: UIColor = UIColor(init(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0))
     
     
-    @IBOutlet weak var cityLocationBackgroundColor: UIImageView!
+   // @IBOutlet weak var cityLocationBackgroundColor: UIImageView!
     
     // TODO: Create button with text "Show Me My Color Palette!" > connect to CityLocationViewController with @IBAction
     
@@ -52,13 +52,13 @@ class CityLocationViewController: UIViewController {
         // TODO: Create function to change background color to animate/change to a different Pantone color every few seconds
         // **ASK MENTOR TO EXPLAIN UICOLOR CUSTOM COLOR CREATION - from your understanding the steps are:
         // create a UIColor object > set to variable > call on that property/variable to set the background color (attempted this in changeBackgroundColor)
-        changeBackgroundColor()
+        //changeBackgroundColor()
         
     }
 
-    func changeBackgroundColor(){
-        cityLocationBackgroundColor.backgroundColor = pantoneColors(red: 0.0, green: 172.0, blue: 107.0, aplha: 0.0))
-    }
+   // func changeBackgroundColor(){
+    // cityLocationBackgroundColor.backgroundColor = pantoneColors(red: 0.0, green: 172.0, blue: 107.0, aplha: 0.0)) }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
