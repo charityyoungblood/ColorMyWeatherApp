@@ -15,6 +15,8 @@ import UIKit
     // UICircularProgressRing
 
 class CityLocationViewController: UIViewController {
+    
+    // TODO: Change color of status icons to white
 
     // var pantoneColors: UIColor = UIColor(init(red: 0.0, green: 0.0, blue: 0.0, alpha: 0.0))
     
@@ -42,7 +44,9 @@ class CityLocationViewController: UIViewController {
     // TODO: Set up data Model - LocationWeatherData class
         // Think about what properties need to be set in this class that we can access for weather data
         // Can you store color data for Pantone suggestions here?
-    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
