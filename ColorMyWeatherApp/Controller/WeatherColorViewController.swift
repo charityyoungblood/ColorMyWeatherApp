@@ -14,6 +14,7 @@ class WeatherColorViewController: UIViewController {
     
     // TODO: Display weather condition image
     
+    @IBOutlet weak var weatherImage: UIImageView!
     // TODO: Display temperature °F/°C 
 
     override func viewDidLoad() {

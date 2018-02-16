@@ -71,6 +71,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WSy-6z-bTc"/>
                     </view>
+                    <connections>
+                        <outlet property="weatherImage" destination="a2I-lX-LIh" id="Iaa-71-Qul"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vFS-fu-hkI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
