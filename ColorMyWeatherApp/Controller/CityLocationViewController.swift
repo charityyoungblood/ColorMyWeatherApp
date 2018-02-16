@@ -34,9 +34,11 @@ class CityLocationViewController: UIViewController {
         // > Add "Privacy - Usage Description"
         // > Add "Privacy - When in Use.."
     
-    //TODO: Create a function for "If user denies location permission"
-        // > Change UI to include a text field
-        // > The text field should read (or add label) "Please enter your location or Please enter your city, state"
+    //TODO: Create a function for "If user denies location permission" place a popup (if possible) for "Please change location permission in settings"
+    
+    // ***The functionality below will be on a later version ***
+            // > Change UI to include a text field
+            // > The text field should read (or add label) "Please enter your location or Please enter your city, state"
     
     // TODO: Add image assets for weather conditions
     
