@@ -79,6 +79,10 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ColorPalettePlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="PXx-0h-ss6">
+                                <rect key="frame" x="41" y="368" width="292" height="171"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="WSy-6z-bTc"/>
@@ -93,6 +97,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ColorPalettePlaceholder" width="512" height="512"/>
         <image name="sunny" width="128" height="128"/>
     </resources>
 </document>
