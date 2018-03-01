@@ -23,6 +23,8 @@ class WeatherColorViewController: UIViewController {
     
     @IBOutlet var colorPalette: [UILabel]!
     
+    // TODO: figure out a better way to display color palette
+        // place colors nearer to each other? stack?
     func changeColorPalette() {
         // this function will change the color of each label in the colorPalette array
         for color in colorPalette {
@@ -49,6 +51,7 @@ class WeatherColorViewController: UIViewController {
         super.viewDidLoad()
         // weatherImage.image = 
         // Do any additional setup after loading the view.
+        changeColorPalette()
     }
 
     override func didReceiveMemoryWarning() {
