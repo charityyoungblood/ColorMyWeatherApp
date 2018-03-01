@@ -21,7 +21,7 @@ class WeatherColorViewController: UIViewController {
     // you could change the background color property of a label or view and display like a palette 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        // weatherImage.image = 
         // Do any additional setup after loading the view.
     }
 
