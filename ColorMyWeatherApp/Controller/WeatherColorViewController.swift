@@ -17,6 +17,9 @@ class WeatherColorViewController: UIViewController {
     
     // TODO: Display "playing card" image/view of color palette, below weather forecast
     
+    @IBOutlet var colorPalette: [UILabel]!
+    
+    
 // what items have background color?
     // you could change the background color property of a label or view and display like a palette 
     override func viewDidLoad() {
