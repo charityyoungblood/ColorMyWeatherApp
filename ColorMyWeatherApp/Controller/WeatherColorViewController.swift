@@ -10,10 +10,14 @@ import UIKit
 
 class WeatherColorViewController: UIViewController {
     
-   
     // TODO: Display weather condition image
+    @IBOutlet weak var weatherImage: UIImageView!
     
     // TODO: Display temperature °F/°C
+    @IBOutlet weak var temperatureLabel: UILabel!
+    
+    // TODO: Display suggestion label
+    @IBOutlet weak var suggestionLabel: UILabel!
     
     // TODO: Display "playing card" image/view of color palette, below weather forecast
     
