@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreLocation
+
 
 // TODO: Install the following Cocoapods:
     // CZWeatherKit
@@ -14,7 +16,7 @@ import UIKit
     // Alamofire
     // UICircularProgressRing
 
-class CityLocationViewController: UIViewController {
+class CityLocationViewController: UIViewController, CLLocationManagerDelegate {
     
     // TODO: Change color of status icons to white
 
@@ -26,6 +28,55 @@ class CityLocationViewController: UIViewController {
     // TODO: Create button with text "Show Me My Color Palette!" > connect to CityLocationViewController with @IBAction
     
     // TODO: Check if user has enabled location settings
+    
+    //MARK: - Create CLLocationManager object
+    /*********************************************************/
+    
+    let locationManager = CLLocationManager()  // this represents creation of a new CLLocationManager() object with no parameters and storing it into
+    // the variable "locationManager"
+    
+    //MARK: - Check if your app is authorized to use location services
+    /******************************************************************/
+    
+    // ** How do you ONLY request access if the user has not already granted access (don't ask every time the user uses the app)? - not available? Also cannot ask user for permission more than once **
+    
+    
+    func isAppAuthorized(){ // this method should prompt the user for location services permission if they have disable location services
+        if CLLocationManager.locationServicesEnabled() {
+            // ** Why can't I use locationManager.authorizationStatus() since locationManager is an instance of the CLLocationManager class? ***
+            
+            if CLLocationManager.authorizationStatus() == .denied {
+                let alert = UIAlertController(title: "App Permission Denied", message: "Please enable location services in Settings", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { action in
+                    switch action.style{
+                    case .default:
+                        print("default")
+                        
+                    case .cancel:
+                        print("cancel")
+                        
+                    case .destructive:
+                        print("destructive")
+                    }}))
+                
+            }
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        
+        let accurateLocation = locations[locations.count - 1] // this stores user location into variable
+        if accurateLocation.horizontalAccuracy > 0 { // line 112 ensures once a valid location is found - the app will stop searching for location
+            locationManager.stopUpdatingLocation()
+            locationManager.delegate = nil
+            print("longitude = \(accurateLocation.coordinate.longitude), latitude = \(accurateLocation.coordinate.latitude)")
+            
+            //            let latitude = accurateLocation.coordinate.latitude
+            //            let longitude = accurateLocation.coordinate.longitude
+            //
+            
+        }
+    }
     
     // TODO: Create function to ask permission from user to access location (use ShoeLove App as guide)
     
@@ -54,6 +105,7 @@ class CityLocationViewController: UIViewController {
         // **ASK MENTOR TO EXPLAIN UICOLOR CUSTOM COLOR CREATION - from your understanding the steps are:
         // create a UIColor object > set to variable > call on that property/variable to set the background color (attempted this in changeBackgroundColor)
         //changeBackgroundColor()
+        isAppAuthorized()
         
     }
 
