@@ -43,7 +43,9 @@ class WeatherColorViewController: UIViewController {
         // ***Later Addition: user can CLICK/SELECT color palette buttons to see Pantone colors***
         var colorArray: Array = [#colorLiteral(red: 0.3236978054, green: 0.1063579395, blue: 0.574860394, alpha: 1), #colorLiteral(red: 0.09411764706, green: 0.1568627451, blue: 0.2862745098, alpha: 1), #colorLiteral(red: 0.1254901961, green: 0.3450980392, blue: 0.3764705882, alpha: 1), #colorLiteral(red: 0.8941176471, green: 0.8911558799, blue: 0.7292792632, alpha: 1)]
         var counter: Int = 0
-        
+        var winterColorArray: Array = []
+        var summerColorArray: Array = []
+        var springColorArray: Array = []
     // if weather image == windy
         // for color in winterColorPalette {
             // color.background
