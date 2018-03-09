@@ -41,7 +41,8 @@ class WeatherColorViewController: UIViewController {
     func changeColorPalette() {
         // this function will change the color of each label in the colorPalette array
         // ***Later Addition: user can CLICK/SELECT color palette buttons to see Pantone colors***
-        var colorArray: Array = [#colorLiteral(red: 0.3236978054, green: 0.1063579395, blue: 0.574860394, alpha: 1), #colorLiteral(red: 0.09411764706, green: 0.1568627451, blue: 0.2862745098, alpha: 1), #colorLiteral(red: 0.1254901961, green: 0.3450980392, blue: 0.3764705882, alpha: 1), #colorLiteral(red: 0.8941176471, green: 0.8911558799, blue: 0.7292792632, alpha: 1)]
+        var fallColorArray: Array = [#colorLiteral(red: 0.09411764706, green: 0.1568627451, blue: 0.2862745098, alpha: 1), #colorLiteral(red: 0.8235294118, green: 0.7333333333, blue: 0.6156862745, alpha: 1), #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)]
+        var fallColorTooArray: Array = [#colorLiteral(red: 0.662745098, green: 0.3764705882, blue: 0.231372549, alpha: 1), #colorLiteral(red: 0.7921568627, green: 0.7882352941, blue: 0.8117647059, alpha: 1), #colorLiteral(red: 0.003921568627, green: 0.3843137255, blue: 0.4392156863, alpha: 1)]
         var counter: Int = 0
         var winterColorArray: Array = []
         var summerColorArray: Array = []
@@ -50,7 +51,7 @@ class WeatherColorViewController: UIViewController {
         // for color in winterColorPalette {
             // color.background
         for color in colorPalette {
-            color.backgroundColor = colorArray[counter]
+            color.backgroundColor = fallColorArray[counter]
             counter += 1
 //            if color.tag == 1 {
 //
