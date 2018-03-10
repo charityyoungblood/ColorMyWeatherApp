@@ -55,19 +55,22 @@ class WeatherColorViewController: UIViewController {
         var springColorArray: Array = [#colorLiteral(red: 0.09411764706, green: 0.1568627451, blue: 0.2862745098, alpha: 1), #colorLiteral(red: 0.08235294118, green: 0.5764705882, blue: 0.5254901961, alpha: 1), #colorLiteral(red: 0.7960784314, green: 0.7137254902, blue: 0.6117647059, alpha: 1)]
         var springColorTooArray: Array = [#colorLiteral(red: 0.6745098039, green: 0.3764705882, blue: 0.6117647059, alpha: 1), #colorLiteral(red: 0.831372549, green: 0.9294117647, blue: 0.3215686275, alpha: 1), #colorLiteral(red: 0.9294117647, green: 0.8901960784, blue: 0.8862745098, alpha: 1)]
         
-        var counter: Int = 0
+      
         
     // if weather image == windy
         // for color in winterColorPalette {
             // color.background
-        for color in colorPalette {
-            while counter < colorPalette.count {
-            color.backgroundColor = fallColorArray[counter]
-            counter += 1
-
-    }
+        var index: Int = 0
+        
+        repeat {
+            for color in colorPalette {
+            color.backgroundColor = fallColorArray[index]
         }
-         }
+        }
+            while index < colorPalette.count
+                index += 1 
+    }
+    
 // what items have background color? use sender.tag
     // you could change the background color property of a label or view and display like a palette 
     override func viewDidLoad() {
