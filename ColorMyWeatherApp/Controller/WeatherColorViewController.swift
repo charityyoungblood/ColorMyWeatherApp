@@ -48,10 +48,12 @@ class WeatherColorViewController: UIViewController {
       
         var winterColorArray: Array = [#colorLiteral(red: 0.4274509804, green: 0.1019607843, blue: 0.137254902, alpha: 1), #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1), #colorLiteral(red: 0.8235294118, green: 0.7333333333, blue: 0.6156862745, alpha: 1)]
         var winterColorTooArray: Array = [#colorLiteral(red: 0.3568627451, green: 0.2509803922, blue: 0.5176470588, alpha: 1), #colorLiteral(red: 0.7843137255, green: 0.6745098039, blue: 0.8235294118, alpha: 1), #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)]
-        var summerColorArray: Array = [#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)]
-        var summerColorTooArray: Array = [#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)]
-        var springColorArray: Array = [#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)]
-        var springColorTooArray: Array = [#colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0), #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)]
+        
+        var summerColorArray: Array = [#colorLiteral(red: 0.02352941176, green: 0.3960784314, blue: 0.6823529412, alpha: 1), #colorLiteral(red: 0.7921568627, green: 0.7882352941, blue: 0.8117647059, alpha: 1), #colorLiteral(red: 0.662745098, green: 0.3764705882, blue: 0.231372549, alpha: 1)]
+        var summerColorTooArray: Array = [#colorLiteral(red: 0.5294117647, green: 0.1254901961, blue: 0.1450980392, alpha: 1), #colorLiteral(red: 0.8901960784, green: 0.5960784314, blue: 0.5647058824, alpha: 1), #colorLiteral(red: 0.8235294118, green: 0.7333333333, blue: 0.6156862745, alpha: 1)]
+        
+        var springColorArray: Array = [#colorLiteral(red: 0.09411764706, green: 0.1568627451, blue: 0.2862745098, alpha: 1), #colorLiteral(red: 0.08235294118, green: 0.5764705882, blue: 0.5254901961, alpha: 1), #colorLiteral(red: 0.7960784314, green: 0.7137254902, blue: 0.6117647059, alpha: 1)]
+        var springColorTooArray: Array = [#colorLiteral(red: 0.6745098039, green: 0.3764705882, blue: 0.6117647059, alpha: 1), #colorLiteral(red: 0.831372549, green: 0.9294117647, blue: 0.3215686275, alpha: 1), #colorLiteral(red: 0.9294117647, green: 0.8901960784, blue: 0.8862745098, alpha: 1)]
         
         var counter: Int = 0
         
