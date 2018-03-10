@@ -61,27 +61,13 @@ class WeatherColorViewController: UIViewController {
         // for color in winterColorPalette {
             // color.background
         for color in colorPalette {
+            while counter < colorPalette.count {
             color.backgroundColor = fallColorArray[counter]
             counter += 1
-//            if color.tag == 1 {
-//
-//                color.backgroundColor = colorArray[0]
-//            }
-//
-//            if color.tag == 2 {
-//                color.backgroundColor = colorArray[1]
-//            }
-//
-//            if color.tag == 3 {
-//                color.backgroundColor = colorArray[2]
-//            }
-//
-//            if color.tag == 4 {
-//                color.backgroundColor = colorArray[3]
-//            }
-//        }
+
     }
-    }
+        }
+         }
 // what items have background color? use sender.tag
     // you could change the background color property of a label or view and display like a palette 
     override func viewDidLoad() {
